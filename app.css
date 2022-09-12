@@ -39,6 +39,10 @@ header {
 .report {
   margin: 1rem;
 }
+.report p {
+  color: hsl(236, 100%, 87%);
+  margin: 0;
+}
 .name {
   width: 4rem;
   height: 5rem;
@@ -76,6 +80,10 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  cursor: pointer;
+}
+.card:hover {
+  background-color: #34397b;
 }
 .card img {
   object-fit: cover;
@@ -85,8 +93,26 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 1rem;
+  margin: 0 1.5rem;
 }
+i {
+  color: hsl(235, 45%, 61%);
+  cursor: pointer;
+}
+i:hover {
+  color: white;
+}
+.time h2 {
+  font-size: 3rem;
+  margin: 0 1.5rem;
+  font-weight: 300;
+}
+.prev-week {
+  margin: 0 1.5rem 0.7rem 1.5rem;
+  font-size: 13px;
+  color: hsl(235, 45%, 61%);
+}
+
 .Work {
   background-image: url("./images/icon-work.svg");
   background-repeat: no-repeat;
