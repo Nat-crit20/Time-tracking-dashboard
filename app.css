@@ -26,7 +26,7 @@ header {
   height: 65%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: start;
   padding-left: 1rem;
   font-weight: 300;
 }
@@ -34,10 +34,30 @@ header {
   width: 4rem;
   border: 2px solid white;
   border-radius: 100%;
+  margin: 1.5rem 1rem;
+}
+.report {
+  margin: 1rem;
+}
+.name {
+  width: 4rem;
+  height: 5rem;
 }
 .profile h2 {
   font-weight: 300;
   font-size: 2rem;
+  margin: 0;
+}
+.time-btns {
+  color: hsl(235, 45%, 61%);
+  margin: 2rem;
+  cursor: pointer;
+}
+.time-btns p {
+  width: 1rem;
+}
+.time-btns p:hover {
+  color: white;
 }
 .container {
   border-radius: 1rem;
@@ -57,8 +77,55 @@ header {
   flex-direction: column;
   justify-content: end;
 }
+.card img {
+  object-fit: cover;
+  width: 4rem;
+}
 .card-top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 1rem;
+}
+.Work {
+  background-image: url("./images/icon-work.svg");
+  background-repeat: no-repeat;
+  background-position: 90% -10%;
+  background-size: 70px;
+  background-color: hsl(15, 100%, 70%);
+}
+.Play {
+  background-image: url("./images/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: 90% -10%;
+  background-size: 70px;
+  background-color: hsl(195, 74%, 62%);
+}
+.Study {
+  background-image: url("./images/icon-study.svg");
+  background-repeat: no-repeat;
+  background-position: 90% -10%;
+  background-size: 70px;
+  background-color: hsl(348, 100%, 68%);
+}
+.Exercise {
+  background-image: url("./images/icon-exercise.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 0%;
+  background-size: 70px;
+  background-color: hsl(145, 58%, 55%);
+}
+.Social {
+  background-image: url("./images/icon-social.svg");
+  background-repeat: no-repeat;
+  background-position: 90% -10%;
+  background-size: 70px;
+  background-color: hsl(264, 64%, 52%);
+}
+.Self {
+  background-image: url("./images/icon-self-care.svg");
+  background-repeat: no-repeat;
+  background-position: 90% -10%;
+  background-size: 70px;
+  background-color: hsl(43, 84%, 65%);
 }
