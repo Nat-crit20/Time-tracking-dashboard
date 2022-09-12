@@ -1,0 +1,8 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+header {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}

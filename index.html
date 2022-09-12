@@ -1,80 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./app.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script defer src="./script.js"></script>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="profile">
+          <img src="./images/image-jeremy.png" alt="" />
+          Report for
+          <div class="name">
+            <h2>Jeremy Robson</h2>
+          </div>
+        </div>
+        <div>
+          <p class="daily">Daily</p>
+          <p class="weekly">Weekly</p>
+          <p class="monthly">Monthly</p>
+        </div>
+      </header>
+      <section class="container Work">
+        <div class="card">
+          <div>
+            <p>Work</p>
+            <button></button>
+          </div>
+          <div class="time">
+            <h2>32hrs</h2>
+          </div>
+          <div class="prev-week">
+            <p>Last Week- 36hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="container Play">
+        <div class="card">
+          <div>
+            <p>Play</p>
+            <button></button>
+          </div>
+          <div class="time">
+            <h2>10hrs</h2>
+          </div>
+          <div class="prev-week">
+            <p>Last Week- 8hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="container Study">
+        <div class="card">
+          <div>
+            <p>Study</p>
+            <button></button>
+          </div>
+          <div class="time">
+            <h2>4hrs</h2>
+          </div>
+          <div class="prev-week">
+            <p>Last Week - 7hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="container Exercise">
+        <div class="card">
+          <div>
+            <p>Exercise</p>
+            <button></button>
+          </div>
+          <div class="time">
+            <h2>4hrs</h2>
+          </div>
+          <div class="prev-week">
+            <p>Last Week - 5hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="container Social">
+        <div class="card">
+          <div>
+            <p>Social</p>
+            <button></button>
+          </div>
+          <div class="time">
+            <h2>5hrs</h2>
+          </div>
+          <div class="prev-week">
+            <p>Last Week - 10hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="container Self">
+        <div class="card">
+          <div>
+            <p>Self Care</p>
+            <button></button>
+          </div>
+          <div class="time">
+            <h2>2hrs</h2>
+          </div>
+          <div class="prev-week">
+            <p>Last Week - 2hrs</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
