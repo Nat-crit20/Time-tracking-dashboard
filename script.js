@@ -11,11 +11,13 @@ class SetData {
       <p>${title}</p>
       <i class="fa-solid fa-ellipsis"></i>
     </div>
-    <div class="time">
-      <h2>${cur}</h2>
-    </div>
-    <div class="prev-week">
-      <p>Last Week - ${prev}</p>
+    <div class="timeframes">
+      <div class="time">
+        <h2>${cur}hrs</h2>
+      </div>
+      <div class="prev-week">
+        <p>Last Week - ${prev}hrs</p>
+      </div>
     </div>
   </div>
 `;
@@ -71,6 +73,7 @@ class SetData {
 }
 
 let activites = new SetData();
+activites.getData("daily");
 
 daily.addEventListener("click", function () {
   activites.getData("daily");

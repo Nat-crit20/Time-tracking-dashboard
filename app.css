@@ -13,11 +13,28 @@ main {
   grid-template-rows: repeat(2, 200px);
   grid-gap: 1.5rem;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    height: auto;
+  }
+  main {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 200px repeat(6, 150px);
+  }
+}
 header {
   border-radius: 1rem;
   background-color: hsl(235, 46%, 20%);
   grid-row-start: 1;
   grid-row-end: 3;
+}
+@media only screen and (max-width: 600px) {
+  header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 .profile {
   color: white;
@@ -30,6 +47,14 @@ header {
   padding-left: 1rem;
   font-weight: 300;
 }
+@media only screen and (max-width: 600px) {
+  .profile {
+    flex-direction: row;
+    align-items: center;
+    height: 60%;
+  }
+}
+
 .profile img {
   width: 4rem;
   border: 2px solid white;
@@ -63,6 +88,28 @@ header {
 .time-btns p:hover {
   color: white;
 }
+
+@media only screen and (max-width: 600px) {
+  .report p {
+    margin-top: 2.5rem;
+  }
+  .profile h2 {
+    font-size: 1.5rem;
+  }
+  .time-btns {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5rem 0;
+  }
+  .time-btns p {
+    width: 5rem;
+    font-size: 1.3rem;
+  }
+  .name {
+    width: 12rem;
+  }
+}
+
 .container {
   border-radius: 1rem;
   background-color: brown;
@@ -82,6 +129,7 @@ header {
   justify-content: end;
   cursor: pointer;
 }
+
 .card:hover {
   background-color: #34397b;
 }
@@ -108,9 +156,42 @@ i:hover {
   font-weight: 300;
 }
 .prev-week {
-  margin: 0 1.5rem 0.7rem 1.5rem;
+  margin: 0 0 0.7rem 2rem;
   font-size: 13px;
   color: hsl(235, 45%, 61%);
+}
+.prev-week p {
+  margin: 0 0 2rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    justify-content: center;
+    align-items: center;
+  }
+  .card-top {
+    width: 300px;
+    margin: 0;
+    font-size: 1.5rem;
+    height: 2.5rem;
+  }
+  .timeframes {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .time {
+    width: 2rem;
+  }
+  .time h2 {
+    font-size: 2rem;
+    width: 2rem;
+    margin: 0;
+  }
+  .prev-week {
+    margin: 0;
+  }
 }
 
 .Work {
