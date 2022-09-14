@@ -3,13 +3,6 @@ const weekly = document.querySelector(".weekly");
 const monthly = document.querySelector(".monthly");
 const main = document.querySelector("main");
 
-const Work = document.querySelector(".Work");
-const Play = document.querySelector(".Play");
-const Study = document.querySelector(".Study");
-const Exercise = document.querySelector(".Exercise");
-const Social = document.querySelector(".Social");
-const Self = document.querySelector(".Self");
-
 class SetData {
   output(title, cur, prev) {
     return `
@@ -28,42 +21,63 @@ class SetData {
 `;
   }
 
-  renderData(cell, timeframes) {
-    cell.innerHtml = timeframes;
-    main.appendChild(cell);
-  }
-
   getData = async function (frame) {
     let response = await fetch("data.json");
     let results = await response.json();
 
-    Work.innerHTML = this.output(
-      results[0].title,
-      results[0].timeframes[frame].current,
-      results[0].timeframes[frame].previous
-    );
-    main.appendChild(Work);
-    // for (let i = 0; i < results.length; i++) {
-    //   let time = results[i].timeframes[frame];
-    //   let act = results[i].title;
+    let cell = {};
 
-    //   if (act === "Self Care") {
-    //     act = "Self";
-    //   }
+    for (let i = 0; i < results.length; i++) {
+      let time = results[i].timeframes[frame];
+      let c = results[i].title;
+      let act = c;
 
-    //   let cell = document.querySelector(`.${act}`);
-    //   let actTimeFrame = this.output(time.current, time.previous);
+      if (act === "Self Care") {
+        act = "Self";
+      }
 
-    //   this.renderData(cell, actTimeFrame);
-    // }
+      cell[i] = document.querySelector(`.${act}`);
+      let actTimeFrame = this.output(c, time.current, time.previous);
+
+      cell[i].innerHTML = actTimeFrame;
+      main.appendChild(cell[i]);
+    }
+    this.active(frame);
   };
+
+  active(frame) {
+    switch (frame) {
+      case "daily":
+        daily.style.color = "white";
+        weekly.style.color = "hsl(235, 45%, 61%)";
+        monthly.style.color = "hsl(235, 45%, 61%)";
+        break;
+      case "weekly":
+        weekly.style.color = "white";
+        daily.style.color = "hsl(235, 45%, 61%)";
+        monthly.style.color = "hsl(235, 45%, 61%)";
+        break;
+      case "monthly":
+        monthly.style.color = "white";
+        weekly.style.color = "hsl(235, 45%, 61%)";
+        daily.style.color = "hsl(235, 45%, 61%)";
+        break;
+      default:
+        monthly.style.color = "hsl(235, 45%, 61%)";
+        weekly.style.color = "hsl(235, 45%, 61%)";
+        daily.style.color = "hsl(235, 45%, 61%)";
+    }
+  }
 }
 
 let activites = new SetData();
-activites.getData("daily");
 
-//I want to be able to loop through the array
-//then I want to grab the title then use that to set the innerHTML
-//It should also take in one value(time)
-//take the getData()[i].timeframe.time set it equal to newValue
-//it should then use the output(newValue.cur, newValue.prev)
+daily.addEventListener("click", function () {
+  activites.getData("daily");
+});
+weekly.addEventListener("click", function () {
+  activites.getData("weekly");
+});
+monthly.addEventListener("click", function () {
+  activites.getData("monthly");
+});
