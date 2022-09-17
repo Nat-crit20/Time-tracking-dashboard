@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://val7997.github.io/Interactive-rating-component/](https://val7997.github.io/Interactive-rating-component/)
+- Live Site URL: [https://val7997.github.io/Time-tracking-dashboard/](https://val7997.github.io/Time-tracking-dashboard/)
 
 ## My process
 
