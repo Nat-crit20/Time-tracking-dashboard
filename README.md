@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://val7997.github.io/Time-tracking-dashboard/](https://val7997.github.io/Time-tracking-dashboard/)
+- Live Site URL: [https://Nat-crit20.github.io/Time-tracking-dashboard/](https://Nat-crit20.github.io/Time-tracking-dashboard/)
 
 ## My process
 
@@ -43,12 +43,12 @@ Users should be able to:
 
 ### What I learned
 
-For this project I learned how to implement grid and reinforce my knowledge of async javascript. For this project I also tried to implement a class, I did find it to be an interesting challenge and will try to find more ways that I might be able to implement classes in the future.
+For this project, I learned how to implement a grid and reinforced my knowledge of async javascript. For this project I also tried to implement a class, I did find it to be an interesting challenge and will try to find more ways that I might be able to implement classes in the future.
 
 ### Continued development
 
-I would like to continue to study css grid, strengthen my understanding of async javascript, as well as try to better understand how I can incorperate classes into my projects.
+I would like to continue to study CSS grid, strengthen my understanding of async javascript, as well as try to better understand how I can incorporate classes into my projects.
 
 ## Author
 
-- Frontend Mentor - [@Val7997](https://www.frontendmentor.io/profile/Val7997)
+- Frontend Mentor - [@Nat-crit20](https://www.frontendmentor.io/profile/Nat-crit20)
